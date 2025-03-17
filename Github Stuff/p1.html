@@ -6,12 +6,20 @@
     </head>
 
     <body>
-        <header>
+        <header style="color: green;" id="myHeader" class="dropdown">
             Welcome to my Webpage
         </header>
         <nav>
             <ul>
-                <li>Introduction</li>
+                <li class="dropdown">Introduction
+                    <div class="dropdown-content">
+                        <ul>
+                            <li>About</li>
+                            <li>Facts</li>
+                            <li>Contacts</li>
+                        </ul>
+                    </div>
+                </li>
                 <li>Products</li>
                 <li>Career</li>
             </ul>
@@ -27,10 +35,96 @@
             <article>
                 <h2>Introduction</h2>
                 <p>I live at Valdosta. I drove about 1 hour and 40 minutes to ASU each day.</p>
-                <img src = "test1.jpg" style = "width: 400px; height: 300px" class ="wdd" id = "article_img">
+                <img src = "test1.jpg.jpg" style = "width: 400px; height: 300px" class ="wdd"/>
                 <p>I work at <a href= "http:www.asurams.edu">Albany State University</a></p>
+                <p class = "test_g_font">Testing google fonts</p>
+
+                <h3 class = "heading_style">Section 1</h3>
+                <p class = "paragraph_style">This is the paragraph for section 1 This is the paragraph for section 1 This is the paragraph for section 1
+                    This is the paragraph for section 1 This is the paragraph for section 1 This is the paragraph for section 1
+                    This is the paragraph for section 1 This is the paragraph for section 1 This is the paragraph for section 1
+                    This is the paragraph for section 1
+                    This is the paragraph for section 1
+                    This is the paragraph for section 1
+                    This is the paragraph for section 1 
+                </p>
             </article>
         </main>
+        <div id="div1">
+            <aside>
+                TBA
+            </aside>
+            <article>
+                More thing here<br>
+                More thing here<br>
+                <h3 id="pdemo">This is for position</h3>
+
+                <a href="https://www.asurams.edu">ASU</a>
+                <a href="https://www.valdosta.edu">VSU</a>
+                <div>
+                    <div class="gallery">
+                        <h3></h3>
+                        <img src="p1.jpg" width="600" height="400"/>
+                        <div class="desc">A Bear</div>
+                    </div>
+                    <div class="gallery">
+                        <h3></h3>
+                        <img src="p3.jpg" width="600" height="400"/>
+                        <div class="desc">A Cat</div>
+                    </div>
+                    <div class="gallery">
+                        <h3></h3>
+                        <img src="p2.jpg" width="600" height="400"/>
+                        <div class="desc">Bear Cubs</div>
+                    </div>
+                </div>
+            </article>
+        
+        </div>
+
+        <div class="flex_c">
+            <div class="flex_item">
+                ASU
+            </div>
+            <div class="flex_item">
+                <img src="p1.jpg"/>
+            </div>
+            <div class="flex_item">
+                VSU
+            </div>
+            <div class="flex_item">
+                <img src="p2.jpg"/>
+            </div>
+            <div class="flex_item">
+                WSU
+            </div>
+            <div class="flex_item">
+                <img src="p3.jpg"/>
+            </div>
+
+        </div>
+
+        <div class="grid_c">
+            <div class="grid_item_a">
+                <div class="grid_item1">ASU</div>
+            </div>
+            <div class="grid_item_b">
+                <img src="p1.jpg"/>
+            </div>
+            <div class="grid_item_c">
+                <div class="grid_item1">VSU</div>
+            </div>
+            <div class="grid_item_d">
+                <img src="p2.jpg"/>
+            </div>
+            <div class="grid_item_e">
+                <div class="grid_item1">WSU</div>
+            </div>
+            <div class="grid_item_f">
+                <img src="p3.jpg"/>
+            </div>
+
+        </div>
 
         <footer>
             Copyright(c) Albany State University 2025
