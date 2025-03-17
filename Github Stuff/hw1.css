@@ -1,23 +1,26 @@
 header {
-    background-color: #666;
+    background-color: #0797df;
     padding: 30px;
     text-align: center;
     font-size: 35px;
     color: white;
 }
 nav {
-    float: left;
+    /*float: left;*/
     width: 30%;
-    height: 300px; /* only for demonstration, should be removed */
+    /*height: 300px;  only for demonstration, should be removed */
     background: #ccc;
     padding: 20px;
+    display: table-cell;
 }
 article {
-    float: left;
-    padding: 20px;
+    /*float: left;*/
+    padding: 100px;
     width: 70%;
-    background-color: #f1f1f1;
-    height: 300px; /* only for demonstration, should be removed */
+    background-color: #140244;
+    /*height: 300px;  only for demonstration, should be removed */
+    color: white;
+    display: table-cell;
 }
 section::after {
     content: "";
@@ -25,7 +28,7 @@ section::after {
     clear: both;
 }
 footer {
-    background-color: #777;
+    background-color: #040404;
     padding: 10px;
     text-align: center;
     color: white;
