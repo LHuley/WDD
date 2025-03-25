@@ -1,0 +1,182 @@
+:root{
+    font-size: 2vw;   
+
+    --fivepx: 0.31rem;
+    --eightpx: 0.5rem;
+    --tenpx: 0.625rem;
+    --fifteenpx: 0.94rem;
+    --twentypx: 1.25rem;
+    --twentyfivepx:1.56rem;
+    --thirtypx:1.86rem;
+    --thirtytwopx: 2rem;
+    --thirtysixpx: 2.25rem;
+    --fourtypx:2.5rem;
+    --fourty8px:3rem;
+    --fiftypx: 3.13rem;
+    --sixtypx: 3.75rem;
+    --seventypx: 4.375rem;
+    --eightypx:5rem;
+    --nintypx: 5.625rem;
+    --hundredpx:6.25rem;
+}
+@media screen and (max-width: 680px){    
+    header{
+      font-size: var(--thirtytwopx);
+    }
+    main aside{
+      display: none;
+    }
+    footer{
+      display: none;
+    }
+  
+    .pflex{
+      display: flex;
+      /*
+      flex-direction:column;  
+      flex-flow:column; 
+        */
+    }
+    
+}
+@viewport {
+    width: device-width;
+    zoom: 1.0;
+    min-zoom: 0.4;
+    max-zoom: 2;
+    user-zoom: fixed;
+}
+.gGrid{
+    display: grid;
+     /*
+    grid-template-columns: auto;
+    */
+    
+} 
+/*
+@media screen and (min-width: 680px){
+    grid-template-columns: auto auto auto;  
+}  It's giving me a syntax error and I don't know why. */  
+body{
+    counter-reset: x;   /*declare a counter */
+} 
+
+h2::after{                   /* use it after each H2 element */
+    counter-increment: x  1;
+    content:   counter(x) ": ";
+}
+header{
+    text-align: center; 
+    font-size: var(--thirtysixpx);
+    color: blue;
+    background-color: yellow;
+    margin-top: var(--fiftypx);
+    padding-top: var(--fiftypx);
+    padding-bottom: var(--thirtypx);
+    margin-bottom: 0;
+    border: var(--fivepx) solid black;
+    font-family: sofia;
+    font-variant: small-caps;
+    font-size: 200%;
+    font-weight: 900;
+}
+nav{
+    background-color: yellow;
+    margin-top: 0;
+    padding-top: 0;
+}
+nav ul{
+    margin-top: 0;
+    margin-left: 0;
+    padding-left: 0;
+}
+nav ul li{
+    display: inline-block;
+    width: var(--hundredpx);
+    height: var(--thirtypx);
+    background-color: blue;
+    color: black;
+    text-shadow: 0px 0px var(--twentypx) yellow;
+    border: calc(var(--fivepx - 2px)) solid black;
+    text-indent: 0px;
+    text-align: center;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+    display:none;
+    position: absolute;
+    min-width: calc(var(--hundredpx + 60px));
+    background-color: #f9f9f9;
+    box-shadow: 8px 8px calc(var(--fifteenpx + 1px)) 0px rgba(216, 230, 31, 0.836), 8px 8px calc(var(--fifteenpx + 1px)) 0px rgba(187, 116, 116, 0.2);
+    padding: calc(var(--tenpx + 2px)), calc(var(--fifteenpx + 1px));
+    z-index: 1;
+    text-align: left;
+}
+.dropdown-content li{
+    background-color: #f9f9f9;
+    border: 0px solid black;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+    color:black;
+}
+.flex_con{
+    display: flex;
+    flex-direction: row;
+    flex-flow: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    flex-wrap:nowrap;
+    overflow:scroll;
+    border: var(--tenpx) solid blue;
+    background-color: yellow;
+    text-shadow: 0px 0px var(--twentypx) blue;
+    font-family: garamond;
+    text-indent: calc(var(--fivepx + 2px));
+    grid-gap: calc(var(--sixtypx + 5px));
+}
+.flex_canine{
+    flex: flex-start;
+    align-self: stretch;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: calc(var(--hundredpx + 100px));
+}
+.flex_canine img{
+    width: 90%;
+    height: auto;
+    box-shadow: 4px 4px var(--eightpx) 0 rgb(12, 11, 11), 4px 6px var(--twentypx) 0 rgb(200, 236, 200);
+}
+.grid_con{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-auto-rows: calc(var(--hundredpx + 100px));
+    align-content: start;
+    overflow:scroll;
+    border: 10px solid yellow;
+    background-color: blue;
+    text-shadow: 0px 0px var(--twentypx) yellow;
+    font-family: garamond;
+    text-indent: calc(var(--eightpx - 1px));
+    grid-gap: var(--seventypx);
+    
+}
+.grid_feline img{
+    width: 75%;
+    height: auto;
+    box-shadow: 4px 4px var(--eightpx) 0 rgb(12, 11, 11), 4px 6px var(--twentypx) 0 rgb(200, 236, 200);
+}
+footer{
+    text-align: center;
+    color: blue;
+    background-color: yellow;
+    border: var(--fivepx) solid black;
+    font-family: sofia;
+    font-variant: small-caps;
+    font-size: 200%;
+    font-weight: 900;
+}
